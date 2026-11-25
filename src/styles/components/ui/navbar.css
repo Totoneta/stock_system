@@ -15,13 +15,9 @@
     transition: all .5s ease-out;
     color: #fff;
 }
+
 .navbar:hover {
     height: 50dvh;
-}
-
-.logonavbar {
-    cursor: pointer;
-    height: 2.3rem;
 }
 
 .listnavbar {
@@ -44,19 +40,35 @@
 }
 
 .listnavbar>li {
-    color: #fff;
     transition: all 1.5s;
     font-size: 1rem;
 }
+
 .listnavbar>li:hover {
     scale: 110%;
 }
+
 .listnavbar>li>a:hover {
     color: #a5a5a5;
 }
 
 .listnavbar>li>a,
 .navbar>div>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     color: #fff;
     text-decoration: none;
+}
+
+/* ICONS */
+.menuiconnavbar {
+    color: #fff;
+    height: 2rem;
+}
+
+.iconnavbar {
+    height: 1.5rem;
+    color: #fff;
 }
