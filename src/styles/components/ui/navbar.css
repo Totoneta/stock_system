@@ -1,0 +1,61 @@
+.navbar {
+    font-family: "BBH Bogle", sans-serif;
+    letter-spacing: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10dvh;
+    gap: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 1rem 1.5rem;
+    background-color: #02002b;
+    transition: all .5s ease-out;
+    color: #fff;
+}
+.navbar:hover {
+    height: 50dvh;
+}
+
+.logonavbar {
+    cursor: pointer;
+}
+
+.listnavbar {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40dvh;
+    gap: 2.5rem;
+    transition: all .5s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.navbar:hover>.listnavbar {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.listnavbar>li {
+    color: #fff;
+    transition: all 1.5s;
+    font-size: 1rem;
+}
+.listnavbar>li:hover {
+    scale: 110%;
+}
+.listnavbar>li>a:hover {
+    color: #a5a5a5;
+}
+
+.listnavbar>li>a,
+.navbar>div>a {
+    color: #fff;
+    text-decoration: none;
+}
